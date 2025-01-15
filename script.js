@@ -1,4 +1,4 @@
-debugger;
+
 var sound1 = new Audio("sounds/song1_macmiller.mp3");
 var sound2 = new Audio("sounds/song2_tyler.mp3");
 var sound3 = new Audio("sounds/song3_chiefkeef.mp3");
@@ -23,47 +23,45 @@ function resetSounds(){
     }
 }
 
-function buttonPressed(button) {
-    if(button == "button1"){ 
-        resetSounds();
-        sound1.play();
-    }if(button == "button2"){ 
-        resetSounds();
-        sound2.play();
-    }if(button == "button3"){ 
-        resetSounds();
-        sound3.play();
+function playSounds(button) {
+    resetSounds();
+    switch(button){
+        case "button1":
+            sound1.play();
+            break;
+        case "button2":
+            sound2.play();
+            break;
+        case "button3":
+            sound3.play();
+        case "button4":
+            sound4.play();
+            break;
+        case "button5":
+            sound5.play();
+            break;
+        case "button6":
+            sound7.play();
+        case "button7":
+            sound7.play();
+            break;
+        case "button8":
+            sound8.play();
+            break;   
+        case "button9":
+            sound9.play();
+            break;
+        case "button10":
+            sound10.play();
+            break;
+        case "button11":
+            sound11.play();
+            break;
+        case "button12":
+            sound12.play();
+            break;
     }
-    if(button == "button4"){ 
-        resetSounds();
-        sound4.play();
-    }
-    if(button == "button5"){ 
-        resetSounds();
-        sound5.play();
-    }if(button == "button6"){ 
-        resetSounds();
-        sound6.play();
-    }if(button == "button7"){ 
-        resetSounds();
-        sound7.play();
-    }
-    if(button == "button8"){ 
-        resetSounds();
-        sound8.play();
-    }if(button == "button9"){ 
-        resetSounds();
-        sound9.play();
-    }if(button == "button10"){ 
-        resetSounds();
-        sound10.play();
-    }if(button == "button11"){ 
-        resetSounds();
-        sound11.play();
-    }if(button == "button12"){ 
-        resetSounds();
-        sound12.play();
-    }
+    
     
     
 }
